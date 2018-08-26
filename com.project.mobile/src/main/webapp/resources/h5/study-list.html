@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+		  id="viewport">
+	<title>学习天地</title>
+	<link rel="stylesheet" href="css/aboutUs.css">
+	<link rel="stylesheet" href="/resources/pull2refresh/css/pull2refresh.css"/>
+</head>
+<body class="body_bg">
+<header>
+	<div class="l">
+		<span id="back"></span>
+	</div>
+	<div class="c">返回</div>
+	<div class="r">学习天地</div>
+</header>
+<div id="wrapper">
+	<div id="studyList">
+	</div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/resources/js/common/hacker.css.js"></script>
+<script src="/resources/pull2refresh/js/iscroll.js"></script>
+<script src="/resources/pull2refresh/js/pull2refresh.js"></script>
+<script src="js/common.js"></script>
+<script src="js/template.js"></script>
+<script src="js/template-helper.js"></script>
+<script src="js/page/study-list.js"></script>
+<script type="text/html" id="studyListTemplate">
+	{{each studyList}}
+	<div class="content" onclick="openstudyDetail('{{$value.id}}')">
+		<div class="time"><span>{{$value.dateTime | dateFormat:'yyyy-MM-dd HH:mm:ss'}}</span></div>
+		<div class="content_c">
+			<div class="content_c_title">{{$value.title | abbr:'30'}}</div>
+			<div class="content_c_pic"><img src="{{$value.imageURL}}" alt="新闻图片" class="newspic"></div>
+			<div class="quanbu"><a href="javascript:;">查看全部</a></div>
+		</div>
+	</div>
+	{{/each}}
+</script>
+</body>
+</html>

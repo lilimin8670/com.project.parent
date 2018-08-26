@@ -1,0 +1,15 @@
+/*单选按钮*/
+input[type='radio'].radio {opacity:1;width: 0;height: 0;display: none}
+span.radio {box-sizing: border-box; cursor: pointer;font-size: 14px;min-width: 40px; padding:0px 5px;margin: 0; color: #646973;border-radius: 2px;border: 1px solid #CCCCCC;display:inline-block;
+    text-align: center;height: 30px;display: table-cell;vertical-align: middle;line-height: 30px;}
+span.active{border: 1px solid #00aff0;color:#FFFFFF !important;background-color:#00aff0;}
+.radioGroup label span.radio{ width: auto !important; margin-top: 10px;color: #000;}
+/*复选框*/
+input[type='checkbox'].checkbox {opacity:1;width: 0;height: 0;display: none}
+span.checkbox {box-sizing: border-box; cursor: pointer;font-size: 14px;min-width: 40px; padding:0px 5px;margin: 0; color: #646973;border-radius: 2px;border: 1px solid #CCCCCC;display:inline-block;
+    text-align: center;height: 30px;display: table-cell;vertical-align: middle;line-height: 30px;}
+span.active{border: 1px solid #00aff0;color:#FFFFFF !important;background-color:#00aff0;}
+.radioGroup label span{height: 30px !important; }
+.radioGroup label span.checkbox{ width: auto !important; margin-top: 10px;color: #000;}
+
+.hiddenText{width: 0px !important; height: 1px !important; border: none !important; box-shadow:none !important;background-color: #fff !important;font-size: 0 !important;}

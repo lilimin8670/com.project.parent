@@ -1,0 +1,71 @@
+.body {
+    position: relative;
+}
+
+/*.promptqk ul{width: 94%;  padding:0 3%;  margin:0 auto;  font-size: 0.9em;  }*/
+.promptqk ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.wrap {
+    background: #000000;
+    display: none;
+    opacity: 0.4;
+    -moz-opacity: 0.4;
+    filter: alpha(opacity=40);
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+#cc {
+    padding-top: 60px;
+}
+
+.promptqk {
+    width: 70%;
+    height: 200px;
+    background: #fff;
+    display: none;
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    left: 15%;
+    border-radius: 10px;
+}
+
+.promptqk .title {
+    font-size: 1.1em;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #8b8b8b;
+    height: 40px;
+    line-height: 40px;
+}
+
+.promptqk ul {
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: left;
+    color: #1E1E1E;
+    margin-bottom: 40px;
+    padding-left: 5%;
+    line-height: 30px;
+    color: #666;
+}
+
+.promptqk ul li:nth-child(1) {
+    background: url('../../img/pink.png') no-repeat;
+    line-height: 30px;
+}
+
+.promptqk ul li:nth-child(2) {
+    background: url('../../img/blue.png') no-repeat;
+    line-height: 30px;
+}
+
+.promptqk ul li span {
+    color: #FFE48D;
+    padding-left: 15px;
+}

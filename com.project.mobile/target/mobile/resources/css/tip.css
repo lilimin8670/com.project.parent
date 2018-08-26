@@ -1,0 +1,45 @@
+@charset "utf-8";
+	/*CSS reset  css 初始化*/
+	body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+	body { color:#616161; font-family:Verdana, Microsoft YaHei, Simsun; background:#fff; line-height:22px;}
+	fieldset, img { border:0; }  /*在ie6下面，只要给插入图片加了链接，就会出现小边框*/
+	img{display:block;}
+	ol, ul { list-style:none; }
+	h1, h2, h3, h4, h5, h6{ font-size:100%; }
+	em { font-style:normal; }
+	input, button, select, textarea { outline:none; } 
+	textarea { resize:none; }
+	a { color: #616161; text-decoration:none;}
+	a:hover { text-decoration:underline; }
+	header a{color: #fff;}
+		.nopower{
+			width: 128px;
+			margin: 50% auto 0;
+		}
+		.nopower_img img{
+			width: 100%;
+			display: block;
+		}
+		p{
+			text-align: center;
+			font-size: 1em;
+			color: #333;
+			margin-top: 20px;
+		}
+		.btn{
+			width: 100%;
+		}
+		.btn a{
+			background: #fff;
+			width: 100px;
+			text-align: center;
+			color: #fff;
+			font-size: 1.1em;
+			display:block;
+			margin: 30px auto;
+			cursor: pointer;
+			border: 1px solid #00aff0;
+			color: #00aff0;
+			padding: 6px 10px;
+			text-decoration: none;
+		}

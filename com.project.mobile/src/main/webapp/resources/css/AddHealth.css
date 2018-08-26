@@ -1,0 +1,40 @@
+.before_con{ width:20%;height:120px!important; margin:0 auto; position:relative;  overflow:hidden;}
+.before_con img{ width:100%; height:auto;}
+.before_con input[type="file"]{ width: 100%; height: 100%; opacity: 0; filter: alpha(opacity=0); z-index: 9; position: absolute; right: 0; top: 0; cursor: pointer;}
+.search{
+        width: calc( 76% - 60px);
+    }
+    .cancel{
+        text-align: right;
+    }
+    .head .c{
+        width: 16%;
+    }
+    .cljkjhs li a{
+        height: 45px !important;
+    }
+    .blue{
+        width: 40%;
+        display: inline-block;
+        }
+    .account{
+        padding-top: 60px;
+        position: relative;
+    }
+    .account input{
+        width: 98%;
+        height: 50px;
+        border: 0 none;
+        padding-left: 2%;
+        display: block;
+         -webkit-appearance: none;
+    }
+    .account span{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        top:90px;
+        background: url("../img/Magnifier_hei.png") no-repeat;
+        cursor: pointer;
+    }

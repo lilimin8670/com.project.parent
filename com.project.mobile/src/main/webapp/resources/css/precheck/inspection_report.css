@@ -1,0 +1,40 @@
+.question_nav{ height: 60px; line-height: 60px; background: #fff;position: fixed; z-index: 10; right: 0; left: 0; padding-right: 10px; padding-left: 10px;
+    border-bottom: 1px solid #ddd;}
+.question_nav a{ color: #707070; text-decoration: none; font-size: 16px;}
+.question_nav a:hover{ color: #707070;}
+.question_nav .question_nav_left{ float: left;}
+.question_nav .question_nav_right{ float: right;}
+.question_nav .fts24{ font-size: 24px;}
+.question_nav .search{ font-size: 14px; border: none; padding: 5px; border-radius: 2px; width: 88%; margin-top: 15px}
+.question_nav .question_title{ position: absolute;right: 50px; left: 50px; overflow: hidden;  margin: 0; text-overflow: ellipsis; text-align: center; color: #707070; font-size: 18px;}
+.nav_list,.nav_cont,.details{ padding-top: 60px;}
+.nav_list li,.details li{width: calc(100% - 20px); padding: 10px; border-bottom: 1px #e0e0e0 solid;}
+.details li{ background: #fff; margin-top: 6px; border: #e6e6e6 1px solid; border-left:none; border-right:none;}
+.nav_list li a{ text-decoration: none;}
+.nav_list p{ overflow: hidden; color: #999; line-height: 24px;}
+.nav_list .name{ font-size: 16px; font-weight: 500; float: left; color: #333; line-height: 30px;}
+.nav_list .time{ float: right; font-size: 16px; line-height: 30px;}
+.details .float{ overflow: hidden; color: #999;}
+.nav_cont li{ height: 55px; line-height: 55px; background: #3474cc; border-bottom: 1px #FFFFFF solid; width: 100%; overflow: hidden;}
+.nav_cont li a{ display: inline-block; color: #FFFFFF; padding-left: 10px; width: calc(100% - 20px); font-size: 15px;}
+.nav_cont li a:hover{ text-decoration: none;}
+.details_cont{overflow: hidden;}
+.details_cont_left{ float: left; width: 50%; vertical-align:bottom;}
+.details_cont_right{ float: right; width: 40%; vertical-align:bottom;padding-bottom: 6px}
+.details_cont_left span,.details_cont_right span{ display: block; color: #999; margin-top: 5px; min-height:19px;}
+.details_cont_left .result{ color: #333;}
+
+.title{ padding-bottom: 6px; color: #333333; font-size: 16px; text-overflow: ellipsis; white-space:nowrap; overflow: hidden;}
+/*.nav_list .details_right{ float: right; width: 50%; text-align: right;}
+.details_left .detection{ color: #333;}
+.details_left span,.details_right span{ padding-top:6px}*/
+.details{ background: #f2f2f2;}
+.proposal{ margin-top: 6px; background: #fff; width: calc(100% - 20px); padding: 10px; border-top: #e6e6e6 1px solid;}
+.proposal h2{ line-height: 30px; font-size: 18px;}
+.proposal p{ line-height: 20px; padding-top: 5px; font-size: 16px;}
+.proposalBox{ padding-top: 15px; color:#666666;}
+/****/
+.list_arrow{ float: right;}
+/**前测检测结果**/
+.last_time{ overflow: hidden; border-top: #dbdbdb 1px solid; padding-top: 8px;}
+.last_time h2{ color: #00aff0; font-size: 15px; font-weight: 600;}

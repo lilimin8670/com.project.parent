@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*CSS reset  css 初始化*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body { color:#616161; font-family:Verdana, Microsoft YaHei, Simsun; background:#fff; line-height:22px;}
+fieldset, img { border:0; }  /*在ie6下面，只要给插入图片加了链接，就会出现小边框*/
+img{display:block;}
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { outline:none; } 
+textarea { resize:none; }
+a { color: #616161; text-decoration:none;}
+a:hover { text-decoration:underline; }
+/*header a{color: #fff;}*/
+
+/*header{background:#00aff0;width:100%;height:60px;line-height:60px;overflow:hidden;padding:0;display:table;position: fixed; top: 0;}*/
+/*header .l,header .c,header .r{float:left;display:table-cell;vertical-align: middle;}*/
+/*header .l{width:7%;}*/
+/*header .l span{float:right;display:block;width:12px;height:26px;background:url('../img/arror.png') no-repeat;margin-top:21px; background-size:100%;cursor:pointer;}*/
+/*header .c{font-size:1.05em;color:#fff;cursor:pointer;width:13%;}*/
+/*header .r{width:60%;padding-right:20%;font-size:1.2em;color:#fff;text-align: center;}*/
+
+nav{width:100%;margin:0 auto;}
+nav span{display:block;width:20%;height:auto;margin:20px auto; }
+nav span .nav_logo{width:100%;height:auto;}
+nav p{width:100%;color:#2577e3;font-size:1em;text-align:center;}
+section{width:70%;margin:20px auto;}
+section span .set_cont{width:100%;height:auto;}
+.edition p{text-align:center;font-size:0.8em;}
+footer p{text-align: center;font-size:0.8em;}
+footer strong{font-size:0.8em;font-style: normal;font-weight: normal;text-align: center;width: 100%;display: inline-block;}
+/* 新闻中心 */
+.new_details{padding: 0px 10px;}
+.new_details .new_details_title{font-size:1em;color:#000;line-height:35px;}
+.new_details .new_details_time{font-size: 0.8em;}
+.new_details .new_details_time span{font-size:1em;color:#89CBF2;}
+.new_details .new_details_content .cont p{text-indent:10px;font-size: 0.8em;}
+.new_details .new_details_content .pic{width:100%;}
+.new_details .new_details_content .pic img{width:100%;height:auto;}
+.new_details .new_details_content .tit{font-size:1em;color:#000;line-height:35px;}
+
+.pingl{ margin-top: 10px; border-top: #DFDFDF 1px solid; padding: 5px 10px 10px 10px;}
+.pingl h2{ color: #129bf0; font-weight: normal; height: 35px; line-height: 35px;}
+.pingl li dl{ overflow: hidden;}
+.pingl li dl dt{ width: 60px; height: 60px; float: left; }
+.pingl li dl dt img{ width: 100%; height: 100%; border-radius: 30px;}
+.pingl li dl dd{ color: #888; float: right; width: calc(100% - 70px); height: 45px; line-height: 20px; font-size: .9em; overflow: hidden; padding-top: 15px;}
+.pingl li dl dd span:nth-child(1){ display: block;}
+.pingl li dl dd span:nth-child(2){ font-size: .75em;}
+.pingl li p{ font-size: .8em; padding-top: 5px;}
+
+.comment{overflow: hidden;position: fixed; display: block;right: 0; left: 0; bottom: 0; width: calc(100% - 20px); height: 32px; z-index: 10; background: #f7f7f7; padding: 10px; border-top: 1px #DFDFDF solid;}
+/*.comment{bottom: 0; display: table; width: calc(100% - 20px); height: 32px; table-layout: fixed; position: fixed; z-index: 10; right: 0; left: 0; background: #f7f7f7; padding: 10px; border-top: 1px #DFDFDF solid;}*/
+.comment input{ float: left; height: 32px; line-height: 32px;border: #999999 1px solid; font-size: .8em; width: calc(100% - 90px);-webkit-appearance:none; outline:none; border-radius: 0;}
+.comment input.focus{ border: #2577E3 1px solid; width: calc(100% - 40px);}
+.comment a{ float: right;}
+.comfs a:nth-child(1){ float: right; background: url(/resources/img/xinxi.png) no-repeat left  center; padding-left: 25px;}
+.comfs{ line-height: 32px;}
+.load{ padding-bottom:60px;}
+.pingl li{ margin-bottom: 16px;}
+/*新增ios文本框显示*/
+.packageDiv{position: absolute;top:0px;left: 0px;right: 0;bottom: 55px;}

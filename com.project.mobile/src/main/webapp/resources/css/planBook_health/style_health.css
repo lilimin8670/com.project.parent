@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+input[type="text"],textarea{
+	-webkit-appearance: none;
+}
+* { margin: 0; padding: 0; font-family: "微软雅黑"; }
+ol,ul,li{ list-style:none;}
+.beautifultop{ height: 50px; width: 100%; background:#fff;}
+.beautifultopnav{ height: 50px; width: 100%; background:#fff; position:fixed; top:0; left:0;}
+.navbutt{ float: left; width: 50px; margin-left: 10px; padding-top:12px;}
+.title{ float: left; width: calc(100% - 120px); text-align: center; line-height: 50px; color: #333; font-size:1.3em; font-weight: normal;}
+.navfanhui{ float:left; text-align:right; width: 50px; margin-right: 10px;}
+
+.aside-menu { width: 100%; height: 100%; }
+.m-list li span{ float:right;}
+.m-list li a{ line-height:150%; font-size:1.1em;}
+.basictitle{ height:35px; line-height:35px; padding-left:10px;
+ background:#e8e8e8; color:#8d8d8d; font-weight:normal; font-size:1.05em; border-bottom:#ddd 1px solid;}
+/*.basictitle:nth-child(1){	padding-top:70px;}*/
+.plan{ margin-top:10px; background:#9a9a9a; overflow:hidden;}
+.plan a{ float:left; width:49%; text-align:center; line-height:200%;}
+.beautifulplan{ border-right:1px solid #fff;}
+/*Name*/
+.beautifultop a{ color:#333; text-decoration:none;}
+.cancel{ float:left; margin-left:10px; line-height:50px;}
+.preservation{ float:right; margin-right:10px; line-height:50px;}
+/*face*/
+.contTitle{ height:82px; line-height:82px; font-size:1.2em; font-weight:normal; width:90%; padding:0 5%; color:#666;}
+.faceContent,.makeupContent{ border-top:#ccc 1px solid; padding-top:10px; width:100%; overflow:hidden;}
+.faceContent h2,.makeupContent h2{font-size:1.2em; font-weight:normal; width:90%; padding:0 5%; color:#666; height:60px; line-height:60px;}
+.faceContent h3,.makeupContent h3{font-size:1.1em; font-weight:normal; width:90%; padding:0 5%; color:#666; height:60px; line-height:60px;}
+.faceContent dl{ width:25%; float:left; text-align:center; margin-bottom:20px; color:#333;}
+.faceContent dt{ margin-bottom:10px; width:80%; margin-left:10%;}
+.faceContent dt img{ width:100%; height:auto;}
+.faceContent ol{ overflow:hidden; list-style:none; position:relative;}
+.faceContent ol li{ float:left; width:calc(20% - 2px); margin:0 2.5% 20px 2.5%; border:#626262 1px solid; text-align:center;}
+.faceContent ol li img{ width:100%; height:auto;}
+.faceContent ol li .yiweiyue{ display:block; border:1px solid #b7b7b7; height:58px; width:58px; border-radius:30px; line-height:58px; position:absolute; bottom:20px }
+.weiyue,.weiyueTwo{ background:#fff; color:#333;}
+.yiyue,.yiyueTwo{ background:#3474ce; color:#fff;}
+.faceContent ul{ width:90%; padding:0 5%; list-style:none;}
+.faceContent ul li{ height:58px; line-height:58px; font-size:1.1em; border-bottom:#ccc 1px solid;}
+.faceContent ul li a{ color:#666; text-decoration:none;}
+.uploadBox{width:100%; color:#666; padding-bottom:20px; overflow:hidden;}
+.makeupContent .uploadBox dl{ width:45%; float:left; padding:0 2.5%;}
+.makeupContent .uploadBox dl dd{ width:100%; height:60px; line-height:60px; text-align:left;}
+
+/*不同分辨率*/
+.facialimg{ padding-top:20px; background:#fff; width:95%; padding-left:5%; overflow:hidden;}
+.facialimgTwo{ padding-top:20px; background:#fff; overflow:hidden;}
+.facephoto{ background:#fff;}
+.facephoto ul{ width:100%; overflow:hidden;}
+.facephoto ul li{ width:27%; padding-left:5%; float:left; overflow:hidden;}
+.facial_textbox{ width:100%; background:#fff; padding-bottom:20px;}
+.skintsjh2{ width:90%; margin:0 auto; position:relative; padding-bottom:32px;}
+.skintsjh2 textarea{border:#ccc 1px solid; width:96%; min-height:120px; height:auto; resize:none;padding:2%}
+.facial_textbox h2{ height:35px; line-height:35px; font-size:1.1em; font-weight:normal; width:90%; padding:0 5%; color:#666;}
+/*promote*/
+.promote{ width:100%;}
+.promote ul{ overflow:hidden;}
+.promote ul li{ width:42.5%; float:left; padding-left:5%;}
+.promote h2{font-size:1.2em; font-weight:600; width:90%; padding:0 5%; color:#666; height:60px; line-height:60px;}
+.prom_briefing{ border:1px solid #9e9e9e; border-left:10px #3474ce solid; height:40px; border-radius:none; margin:20px 0; padding:0 10px; font-size:1em; width:calc(100% - 31px);}
+.submit{ width:90%; margin:20px 5%; background:#3474cc; border-radius:5px; border:none; height:40px; line-height:40px; color:#fff; font-size:1.1em;}
+/*造型前*/
+.before_con{ width:44%; margin:0 3%; float:left; position:relative; height:250px; overflow:hidden;}
+.before_con img{ width:100%; height:auto;}
+.before_con input[type="file"]{ width: 100%; height: 100%; opacity: 0; filter: alpha(opacity=0); z-index: 9; position: absolute; right: 0; top: 0; cursor: pointer;}
+
+
+.title-big{font-size:1em !important; float: left; width: calc(100% - 120px); text-align: center; line-height: 50px; color: #333; font-weight: normal;}
+
+
+
+
+
+/**2016-08-16*/
+.m-list li{ overflow: hidden;}
+.m-list .line-span{ float: left; width: calc(30% - 2px);}
+
+
+/*iframe嵌套头部定位*/
+.parent_iframe{width: 100%;max-height:100%;overflow-y: scroll;height: 100%;}
+.iframe_header{-webkit-overflow-scrolling: touch; overflow-y: scroll;position: absolute;width: 99%;top: 60px;padding: 0px !important;left: 0px;bottom: 0px;}
+
+/*弹出层*/
+.laybox{overflow:auto;max-width: 100%;height: 500px;display: none;padding-bottom:40px;}
+.laybox > .header{width: 100%;border-bottom: 1px solid #ddd;}
+.laybox > .header>input{-webkit-appearance: none; width: 50%; margin: 10px 5%;padding: 5px;border: none;}
+.laybox > .header>button{-webkit-appearance: none; padding: 5px 10px; border-radius: 3px; background:#00AFF0; color:#fff; border:none;}
+.datagrid-body{max-height: 300px;overflow-y: scroll;max-width: 100% !important;overflow-x: hidden;}
+.datagrid-row{height: 30px !important;line-height: 30px !important;}
+.window{border: 1px solid #dddddd !important;overflow: hidden;
+    -moz-box-shadow: 4px 2px 4px #dddddd; /* 老的 Firefox */
+    box-shadow: 4px 2px 4px #dddddd;
+}

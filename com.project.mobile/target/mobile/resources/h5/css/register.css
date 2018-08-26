@@ -1,0 +1,93 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body { font-size:12px; color:#616161; font-family:Verdana, Microsoft YaHei, Simsun; background:#fff; line-height:22px;}
+fieldset, img { border:0; }  /*在ie6下面，只要给插入图片加了链接，就会出现小边框*/
+img{display:block;}
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { outline:none; }
+textarea { resize:none; }
+a { color: #616161; text-decoration:none; }
+a:hover { text-decoration:underline; }
+.clearfix:before,.clearfix:after{
+	display:table;
+	content:"";}
+.clearfix:after{
+	clear:both;}
+.clearfix{zoom:1;}
+
+.register-form{
+	width: 400px;
+	margin: 50px auto;
+	border: 1px solid #999;
+	border-radius: 5px;
+	padding: 40px 10px 50px 0;
+}
+.register-form div{
+	margin-bottom: 20px;
+}
+.register-form select{
+	width: 37%;
+	height: 35px;
+}
+.register-form h2{
+	text-align: center;
+}
+.register-form span{
+	color: red;
+}
+.register-form label{
+	width: 20%;
+	text-align: right;
+	display: inline-block;
+}
+.register-form input{
+	width: 75%;
+	height: 35px;
+	padding-left:5px;
+}
+.verification{
+	height: 40px !important;
+	background: #28A5F6;
+	border: 0 none;
+	cursor: pointer;
+	padding:0 5px;
+}
+.remarks{
+	display: inline;
+	line-height: 60px;
+	width: 12%;
+}
+.remarks span,i{
+	display: table-cell;vertical-align: top;
+}
+textarea{
+	width: 75%;
+	height: 60px;
+	resize: none;
+}
+p{
+	text-align: center;
+}
+.verification-yn{
+	position: absolute;
+	left: 50%;
+	bottom: -18px;
+}
+.location{
+	position: relative;
+
+}
+input[type="button"]{
+	cursor: pointer;
+}
+input[type="radio"]{
+	width: 15px;
+	height: 15px;
+	display:table-cell;vertical-align: middle;
+}
+.m-toolbar{
+	text-align: center;
+}
+

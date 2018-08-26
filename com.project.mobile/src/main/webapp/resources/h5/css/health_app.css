@@ -1,0 +1,19 @@
+/*.informing_box{ position: absolute; left: 0; top: 65px; overflow: hidden; z-index: 1;  width: 100%; }*/
+.basic_list{ background: #FFFFFF;}
+.basic_list li{height: 50px; line-height: 50px; clear: left; overflow: hidden; border-bottom: #dedede 1px solid;}
+.basic_list li.native{ height: 187px;}
+.basic_list li.native .place{ line-height: 35px;}
+.basic_list li.native li label{ padding-left: 30px; width: calc(30% - 45px); color: #999;}
+.basic_list li.native li select{ color: #999;}
+.basic_list li label{ float: left; width: calc(40% - 30px); padding: 0 15px;}
+.basic_list li input{float: left; width: 56%; height: 20px; line-height: 20px; border: none; margin-top: 15px; -webkit-appearance:none; font-size: 13px;}
+.basic_list li textarea{float: left; width: 56%; border: none; margin-top: 15px; -webkit-appearance:none; font-size: 13px; min-height: 50px;}
+.basic_list .address{ height: 76px;}
+.basic_list li input.verification{float: left; width: calc(30% - 40px); height: 20px; line-height: 20px; border: none; margin-top: 15px; -webkit-appearance:none; font-size: 13px;}
+.basic_list li .verif{ float: right; padding:0 5px; width: 30%; border-left: 1px solid #d9d9d9; text-align: center; color: #00aff0;}
+.basic_list li select{float: right; width: 56%; height: 20px; line-height: 20px; border: none; margin-top: 15px; -webkit-appearance:none; font-size: 13px; background: #FFFFFF; background: url(../img/listback.png) no-repeat 95% center;}
+.informing_box h2{ height: 50px; line-height: 50px; text-align: center; font-weight: normal; font-size: 16px; margin-top: 10px;}
+.basic_list .register{ text-align: center; height: 80px; line-height: 80px;}
+.basic_list .register a{ padding: 8px 40%; background: #00aff0; color: #FFFFFF; text-decoration: none; border-radius: 5px;}
+.basic_list li span{
+    color: #f00;}

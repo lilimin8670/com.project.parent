@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin: 0; padding: 0; font-family: "微软雅黑"; }
+ol,ul,li{ list-style:none;}
+body{ font-size:1em;background-color: #fff; }
+h2{ font-size:1.2em; font-weight:normal; text-align:center; height:42px; line-height:42px;}
+h3{ font-size:1.1em; font-weight:normal; text-align:center; height:35px; line-height:35px;}
+.bmbbox{ width:96%; margin:0 auto;}
+.bmbbox li{ padding: 0 10px 10px 10px; line-height:30px; overflow:hidden;}
+.bmbbox li label{ padding:0 5px; margin:0 5px; display:block; float:right;}
+.bmbbox li input[type="text"]{width:100%; height:32px;border: none; border-bottom:1px solid #ccc; font-size:0.8em;-webkit-appearance: none;-moz-appearance: none;appearance:none;border-radius: 0px;}
+.bmbbox select{ float:right; width:100%;height:34px;border-radius:2px; border:1px solid #ccc;-webkit-appearance: none;}
+.bmbbox textarea{ height:80px; width:100%; resize:none;border-radius:2px; border:1px solid #ccc;font-size:0.8em;-webkit-appearance: none;}
+.bmbbox li input[type="date"]{width:100%; height:32px; border:1px solid #ccc; font-size:0.8em;-webkit-appearance: none;}
+.bmbbox li span{ display:block; width:100%;color: red;}
+.bmbbox li .schbtn{-webkit-appearance: none; width:90%; margin-left:5%; height:35px; border:none; border-radius:5px; background:#3474cc; color:#fff;}
+.bmbbox li b{color: red;}
+.before_con { width:50%; margin:0 auto; position:relative;}
+.before_con img{ width:100%; height:auto;}
+.before_con input[type="file"]{ width: 100%; height: 100%; opacity: 0; filter: alpha(opacity=0); z-index: 9; position: absolute; right: 0; top: 0; cursor: pointer;}
+
+.moren_img{ width:47%; margin:10px 1%; float:left; position:relative; height:200px; border:1px solid #cccccc;}
+.moren_img img{ width:100%; height:auto;margin-bottom: 15px;}
+.moren_img input[type="file"]{ width: 100%; height: 100%; opacity: 0; filter: alpha(opacity=0); z-index: 9; position: absolute; right: 0; top: 0; cursor: pointer;}
+.title{font-size:1.2em;color:#fff;background:#00B050;}
+.bmbbox li input.dib{display:inline-block;width:50%;}
+.bmbbox li span{color:red;display:inline-block;width:8px;height:10px;}
+.title-2 h2{background:#9BBB59;font-size:1.2em;color:#fff;}
+.systems h3{font-size:1.05em;color:#666;text-align:left;}
+.lifestyle h3{height:auto;text-align:left;}
+.lifestyle p{font-size:0.8em;text-align: left;}
+.wkl{margin-top:30px;}
+.wkl p{text-align: center;color:#999;}
+
+/* 底部按钮 */
+.butt{
+    width:80%;
+    margin: 20px auto;
+    overflow:hidden;
+}
+.butt button{
+    background:#3474cc;
+    border:0 none;
+    width:40%;
+    height:35px;
+    line-height:35px;
+    color:#fff;
+    font-size:1em;
+    letter-spacing:8px;
+}
+.butt .one{
+    width:100%;
+    margin-bottom:20px;
+    height:35px;
+    line-height:35px;
+}
+.butt .two{
+    float:left;
+}
+.butt .three{
+    float:right;
+}
+
+
+.bttn{
+    padding: 10px 5% 10px;
+    border-bottom: 1px dashed #ccc
+}
+.bttn i{
+    text-align: left;
+    font-style: normal;
+}
+.bttn strong{
+    width: 22px;
+    height: 22px;
+    float: right;
+    background:url(../../img/right_arror.png)no-repeat right center;
+    padding-right: 25px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+}
+
+
+.sancan label{ float: left !important; padding: 0 0 0 35px !important; margin: 0 !important; width: calc(100% - 35px);}
+.sancan label:nth-child(1){padding: 0 !important;}
+.sleeping label{ float: left !important; margin: 0 !important;}
+.sleeping label:nth-child(1){width: 100%;}
+
+.biaoti{ text-align: center;}
+
+
+/* 审核详情 */
+.auditdetails{width:94%;margin:0px 3%;background:#fafafa;overflow-y:scroll;height: 200px;}
+.auditdetails .title{font-size:1.1em;line-height:30px;}
+.auditdetails .left{float:left;width:10%;}
+.auditdetails .left img{width:28px;height:28px;}
+.auditdetails .right{float:left;width:90%;}
+.auditdetails .right p{font-size:1em;color:#333;line-height:25px;}
+.auditdetails .right .time{color:#bbbbbb;font-size:1em;}
+.auditdetails .right .time span{color:#78ddd9;}
+.auditdetails .right .time span.tongguo{color:#f0bcdc;}
+.text{width: 94%;margin: 10px 3% 0;background:#fafafa;height:200px;border-bottom:1px solid #e8e8e8;}
+.text textarea{width:100%;border:0;height:87%;background:#fafafa;padding:3%;font-size:1.1em;}
+.auditdetails-foot{width:100%;height:45px;background:#fff;line-height:45px;}
+.auditdetails-foot .left{float:left;width:31%;text-align: center;font-size:1em;height: 40px;}
+.auditdetails-foot .center{float:left;width:2%;text-align: center;margin-top:8px;}
+.auditdetails-foot .right{float:left;width:31%;text-align: center;font-size:1em;height: 40px;}
+.auditdetails-foot .left_two{width:48%;}
+.auditdetails-foot .right_two{width:48%;}
+
+/*标题栏   共用的改的时候记得添上z-index: 9999;*/
+/*header{background:#00aff0;width:100%;height:60px;line-height:60px;overflow:hidden;padding:0;display:table;position: fixed; top: 0;z-index: 9999;}*/
+/*header .l,header .c,header .r{float:left;display:table-cell;vertical-align: middle;}*/
+/*header .l{width:7%;}*/
+/*header .l span{float:right;display:block;width:12px;height:26px;background:url('/resources/h5/img/arror.png') no-repeat;margin-top:21px; background-size:100%;cursor:pointer;}*/
+/*header .c{font-size:1.05em;color:#fff;cursor:pointer;width:13%;}*/
+/*header .r{width:60%;padding-right:20%;font-size:1.2em;color:#fff;text-align: center;}*/
+
+
+
+header{background:#fff;width:calc(100% - 20px);border-bottom: 1px solid #dedede;padding:0px 10px;
+    height:44px;line-height:44px;overflow:hidden;position: fixed; top: 0;z-index: 9999;font-size:16px;color:#333;}
+header a{color: #333;}
+header .l{width: 20px;float: left;text-align: left;}
+header .l span{display:block;margin-top: 15px;width:8px;height:18px;background:url('/resources/h5/img/arror.png') no-repeat;background-size:100%;cursor:pointer;}
+header .c{cursor:pointer;}
+header .c_title{float: left; overflow: hidden; /*自动隐藏文字*/text-overflow: ellipsis;/*文字隐藏后添加省略号*/white-space: nowrap;/*强制不换行*/
+    cursor:pointer;width:calc(100% - 24px);text-align: center;}
+header .w46{calc(100% - 46px);}
+header .r{text-align: right;width: 20px;display: block;float: right;}
+
+
+
+.imgMax{ background: #000; height: 100%; width: 100%; position: fixed; top:0; text-align: center; z-index: 99999   ;}
+.imgMax img{max-height: 90%; max-width: 90%; height:auto; width: auto; display: table-cell; vertical-align: middle;}
+/*防止定位失效*/
+.pubPosContent{position: absolute;top: 62px;bottom: 0;left: 0;right: 0;overflow-y: scroll;-webkit-overflow-scrolling: touch;overflow-scrolling:touch;}

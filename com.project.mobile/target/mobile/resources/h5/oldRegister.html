@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="css/easyui.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link href="css/icon.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/mobile.css" media="(min-width:0px) and (max-width:979px)" />
+	<script type="text/javascript" src="js/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="js/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="js/easyui/easyui-lang-zh_CN.js"></script>
+	<script type="text/javascript" src="js/easyui/jquery.easyui.mobile.js"></script>
+	<script type="text/javascript" src="js/easyui/region.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/page/MemberRegister.js"></script>
+</head>
+<body>
+	<div class="easyui-navpanel" style="position:relative;padding:20px;">
+	<form id="paramForm" class="register-form">
+		<input id="fromMemId" name="fromMemId" type="hidden">
+		<header >
+			<div class="m-toolbar ">
+				<div class="m-title">一龄会员注册</div>
+			</div>
+		</header>
+		<div class="zbox">
+			<label>帐号</label>
+			<input name="loginname" class="easyui-textbox" style="width: 76%;" data-options="
+					required:true,
+					validType:['nameSpace','specialChart','loginname']">
+		</div>
+		<div>
+			<label>姓名</label>
+			<input name="memName" class="easyui-textbox" style="width: 76%;" data-options="
+				required:true,
+				validType:'nameSpace',
+				prompt:'建议输入汉字'">
+		</div>
+		<div>
+			<label>昵称</label>
+				 <input name="nickname" class="easyui-textbox" style="width: 76%;" data-options="
+					required:true" >
+		</div>
+		<div>
+			<label>密码</label>
+				 <input id="password" name="password" type="password" class="easyui-textbox" style="width: 76%"  data-options="
+					required:true,
+					validType:'safepass'" >
+		</div>
+		<div>
+			<label>确认密码</label>
+				<input id="comfirmPwd" name="comfirmPwd" type="password" class="easyui-textbox" style="width: 76%" data-options="
+					required:true,
+					validType:['checkPassWord','safepass']">
+		</div>
+		<div>
+			<label>身份证号</label>
+			   <input id="idCard" name="idCard" class="easyui-textbox" style="width: 76%" data-options="
+					validType:['length[15,18]','idCard']">
+		</div>
+		<div>
+			<label>出生日期</label>
+			   <input name="birthdayDate" class="easyui-datebox" style="width: 76%" data-options="
+			   		editable:false">
+		</div>
+		<div>
+			<label>联系方式</label>
+				<input id="phone" name="phone" class="easyui-textbox" style="width: 76%" data-options="
+					required:true,
+					validType:'mobilePhone'">
+		</div>
+        <div>
+			<label>短信验证码</label>
+            <input class="easyui-textbox" id="smsCode" name="smsCode" style="width: 46%;" data-options="
+					required:true,
+					validType:'validateCode'">
+			<input type="button" onclick="requireValidCode(this)" value="获取验证码" style="width:30%;vertical-align:middle;">
+		</div>
+		<div>
+			<label>性别</label>
+				<label style="width:10%;"><input type="radio" name="sex"  checked="checked" value="女">女</label>
+				<label style="width:10%;"><input type="radio" name="sex" value="男">男</label>
+				<label style="width:10%;"><input type="radio" name="sex" value="未知">其他</label>
+		</div>
+		<div>
+			<label>婚否</label>
+				<label style="width:13%;"><input type="radio" name="isMarry" value="2">已婚</label>
+				<label style="width:15%;"><input type="radio" name="isMarry" value="1">未婚</label>
+				<label style="width:15%;"><input type="radio" name="isMarry" value="3">离异</label>
+				<label style="width:15%;"><input type="radio" name="isMarry" value="4">丧偶</label>
+				<label style="width:15%;"><input type="radio" name="isMarry" value="0" checked="checked">其他</label>
+		</div>
+		<div class="living">
+			<label>居住地址</label>
+				<input id="province" name="province" class="easyui-combobox" style="width: 75%;" data-options="
+					required:true,
+					editable:false,
+					panelHeight:'105px',
+					prompt:'请选择'"><br>
+				<label></label>&nbsp;<input id="city" name="city" class="easyui-combobox" style="width: 75%;" data-options="
+					required:true,
+					editable:false,
+					panelHeight:'105px',
+					prompt:'请选择'"><br>
+				<label></label>&nbsp;<input id="area" name="area" class="easyui-combobox" style="width: 75%;" data-options="
+					required:false,
+					editable:false,
+					panelHeight:'105px',
+					prompt:'请选择'">
+		</div>
+
+		<div>
+			<label>详细地址</label>
+				<input name="address" class="easyui-textbox" style="width:76%;height: 80px" data-options="
+					multiline:true">
+		</div>
+		<div class="zbox">
+			<label></label>
+			<input type="button" class="m-buttongroup" value="注册" style="width:76%" onclick="MemberRegister()">
+		</div>
+    </form>
+	</div>
+</body>
+</html>

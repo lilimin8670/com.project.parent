@@ -1,0 +1,103 @@
+@charset "utf-8";
+* { margin:0; padding:0;}
+html { height:100%;}
+body { padding:0; margin:0; font-size:12px;  color:#444; font-family:"宋体"; background-color:#fff; height:100%;}
+a { text-decoration:none; color:#333;}
+a:hover { text-decoration: underline;}
+img{ border:0;}
+ol,ul,li { margin: 0px; padding: 0px; list-style-type: none;}
+dl,dt,dd,h1,h2,h3,h4,h5,h6 { margin: 0px; padding: 0px;}
+.clear{ display:block;overflow:hidden;clear:both;height:0;line-height:0;font-size:0;}
+
+/*登录*/
+.login_main {background:url(../images/dl_bj_02.png) repeat-x left top;}
+.lg_topimg { text-align:center; padding-top:45px; padding-bottom:15px;}
+.login_box { width:350px; padding:35px 45px 45px 45px; margin:0 auto; background:#fff; border-radius:4px; }
+.login_title { text-align:center;}
+.login_box ul { padding-top:42px;}
+.login_box ul li { width:100%;}
+.login_input { height:50px; border:1px solid #dcdcdc; border-radius:4px; background:#f3f3f3;}
+.login_input span { padding:14px; float:left;}
+.login_input input { float:left; width:290px; height:50px; border:none; background:#f3f3f3; font-size:16px;}
+.margin_top15 { margin-top:15px;}
+.login_jzmm { height:35px; line-height:35px; font-size:14px;}
+.login_jzmm input { width:15px; height:15px; float:left; margin:10px 6px 0 2px;}
+.login_button input { background:#fb6e52;cursor: pointer; border:none; height:50px; width:100%; text-align:center; font-size:20px; color:#fff;}
+
+/*首页*/
+.body_table { width:100%; height:100%; border:none;}
+.ht_lfet { background:#393939;}
+.ht_top { height:60px; width:100%;}
+.ht_top_logo { float:left;}
+#ht_top_nav { float:right; width:640px; height:60px; display:block;}
+#ht_top_nav li { float:left;  margin-left:10px; position:relative; }
+#ht_top_nav li a { display:block; height:60px; line-height:60px; font-size:14px; padding-left:28px;}
+#ht_top_nav li a:hover { text-decoration:none; color:#fb6e52;}
+.ht_top_navb1 { background:url(../images/lcwht_nuv_03.png) no-repeat left center;}
+.ht_top_navb2 { background:url(../images/lcwht_nuv_06.png) no-repeat left center;}
+.ht_top_navb3 { background:url(../images/lcwht_nuv_08.png) no-repeat left center;}
+.ht_top_navb4 { background:url(../images/lcwht_nuv_10.png) no-repeat left center;}
+.ht_top_navb5 { background:url(../images/lcwht_nuv_12.png) no-repeat left center;}
+.ht_top_navb6 { background:url(../images/lcwht_nuv_14.png) no-repeat left center;}
+.ht_top_navb1 a,.ht_top_navb2 a,.ht_top_navb3 a,.ht_top_navb4 a { width:75px;}
+.ht_top_navb5 a,.ht_top_navb6 a { width:50px;}
+#ht_top_nav li ul{display:none; position:absolute; left:-10px;}
+#ht_top_nav li ul li{clear:both;}
+#ht_top_nav li ul a{width:95px; height:45px; line-height:45px; padding:0; margin:0; text-align:center; border-top:1px solid #fff; background:#4c4c4c;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;transition:all 0.5s ease; color:#fff;}
+#ht_top_nav li ul li a:hover{background:#fb6e52;color:#fff; text-decoration:none;}
+
+.ht_main { background:#f0f0f0 url(../images/weizhi_bj_03.png) repeat-x left top;}
+.ht_bottom { border-top:1px solid #e1e1e1; background:#fff; color:#666; font-size:12px;}
+.ht_user { width:200px; padding-top:23px;}
+.ht_user dt { text-align:center;}
+.ht_user dt img { width:73px; height:73px; border-radius:50%; border:2px solid #fff;}
+.ht_user dd { height:44px; line-height:44px; text-align:center; color:#fff; font-size:14px;}
+.ht_message { padding:10px 13px 20px 13px;}
+.ht_message li { width:58px; float:left; height:30px;}
+.ht_message li a { display:block; height:30px;}
+.ht_message li span { background:url(../images/xiaoxi_bj_03.png) no-repeat; color:#fff; font-size:12px; font-weight:bold; width:15px; height:15px; line-height:15px; display:block; text-align:center; position:relative; left:56%;}
+.ht_messageli1 { background:url(../images/user_03.png) no-repeat center;}
+.ht_messageli2 { background:url(../images/lcwht_home_20.png) no-repeat center;}
+.ht_messageli3 { background:url(../images/lcwht_home_22.png) no-repeat center;}
+.ht_left_navul {}
+.ht_left_navul li { height:50px; line-height:50px; font-size:14px; color:#fff; border-bottom:1px solid #393939; background:#4c4c4c;}
+.ht_left_navul li a { color:#fff; display:block;}
+.ht_left_navul li a:hover { color:#fb6e52; text-decoration:none;}
+.ht_left_navul li span { float:left; padding:14px 15px 12px 22px;}
+.right_main_box { padding:22px; font-size:14px;}
+.ht_home_mk { box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+.ht_home_mk_box1 { height:124px; border:1px solid #e1e1e1; border-radius:4px; background:#fff; width:18%; float:left;}
+.ht_home_mk_box2 { height:124px; border:1px solid #e1e1e1; border-radius:4px; background:#fff; width:18%; float:left; margin-left:1.5%;}
+.ht_home_mk_box3 { height:124px; border:1px solid #e1e1e1; border-radius:4px; background:#fff; width:18%; float:left; margin-left:1.5%;}
+.ht_home_mk_box4 { height:124px; border:1px solid #e1e1e1; border-radius:4px; background:#fff; width:18%; float:left; margin-left:1.5%;}
+.ht_home_mk_box1 dt { width:35%; height:124px; float:left; background:url(../images/lcwht_home_07.png) no-repeat center;}
+.ht_home_mk_box1 dd { width:65%; height:124px; float:left;}
+.ht_home_mk_box1 dd h3 { font-size:36px; font-weight:bold; font-family:"微软雅黑"; text-align:center; color:#f88a6f; padding:20px 0 10px;}
+.ht_home_mk_box1 dd span { display:block; text-align:center; font-size:14px; color:#666;}
+.ht_home_mk_box2 dt { width:35%; height:124px; float:left; background:url(../images/lcwht_home_10.png) no-repeat center;}
+.ht_home_mk_box2 dd { width:65%; height:124px; float:left;}
+.ht_home_mk_box2 dd h3 { font-size:36px; font-weight:bold; font-family:"微软雅黑"; text-align:center; color:#f7b547; padding:20px 0 10px;}
+.ht_home_mk_box2 dd span { display:block; text-align:center; font-size:14px; color:#666;}
+.ht_home_mk_box3 dt { width:35%; height:124px; float:left; background:url(../images/lcwht_home_13.png) no-repeat center;}
+.ht_home_mk_box3 dd { width:65%; height:124px; float:left;}
+.ht_home_mk_box3 dd h3 { font-size:36px; font-weight:bold; font-family:"微软雅黑"; text-align:center; color:#3cc6d0; padding:20px 0 10px;}
+.ht_home_mk_box3 dd span { display:block; text-align:center; font-size:14px; color:#666;}
+.ht_home_mk_box4 dt { width:35%; height:124px; float:left; background:url(../images/lcwht_home_15.png) no-repeat center;}
+.ht_home_mk_box4 dd { width:65%; height:124px; float:left;}
+.ht_home_mk_box4 dd h3 { font-size:36px; font-weight:bold; font-family:"微软雅黑"; text-align:center; color:#00acee; padding:20px 0 10px;}
+.ht_home_mk_box4 dd span { display:block; text-align:center; font-size:14px; color:#666;}
+.ht_home_jyjl { width:48.5%; float:left; border:1px solid #e1e1e1; border-radius:4px; background:#fff;}
+.ht_home_czjl { width:48.5%; float:left; margin-left:1.5%; border:1px solid #e1e1e1; border-radius:4px; background:#fff;}
+.ht_home_title { height:45px; line-height:45px; background:#f4f3f3 url(../images/lcwht_home_37.png) no-repeat 15px center; padding-left:25px; font-size:16px; border-bottom:1px solid #e1e1e1;}
+.home_jyjl_img { height:276px; overflow:hidden;}
+.home_jyjl_img img { width:85%; margin:0 auto;}
+.home_ul_list { height:276px; overflow:hidden;}
+.home_ul_list li { height:45px; line-height:45px; background:url(../images/dian_03.png) no-repeat 15px center; border-bottom:1px dashed #e1e1e1; padding:0 15px 0 25px; font-size:14px;}
+.home_ul_list li span { float:right; color:#999;}
+.home_ul_list li:last-child { border-bottom:none;}
+
+/*位置*/
+.location { background:#f0f0f0 url(../images/weizhi_bj_03.png) repeat-x left top; border-bottom:1px solid #e1e1e1;}
+.location h2 { font-size:12px; padding-left:22px; font-weight:normal; color:#666;}
+
+.td_scroll { overflow:auto;}

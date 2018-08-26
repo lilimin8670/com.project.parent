@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.cancel{ width:10%;}
+.preservation{ width:10%;}
+.title{ width:calc(80% - 20px);}
+.easyui-navpanel{ height:100%; background:#efeff4;}
+.basic-content{ margin-top:30px;}
+.basic-content input[type='text']{ width:90%; padding:10px 5%; height:40px; line-height:40px; border:0; border-radius:0; background:#FFF; font-size:1.1em; border-bottom:1px solid #d9d9d9;}
+.basic-content form{border-top:1px solid #d9d9d9; border-right:0;  border-left:0;}
+.basic-content label{ display:block; width:90%; padding:10px 5%; border-bottom:1px solid #d9d9d9; height:40px; line-height:40px; border-radius:0; background:#FFF; font-size:1.1em;}
+.basic-content label input[type='radio']{ margin-right:10px;}
+.basic-content label input[type='checkbox']{ margin-right:10px;}
+.basic-content .improvement{ border:none; resize:none; width:90%; padding:10px 5%; line-height:150%;font-size:1.1em; border-radius:0;border-bottom:1px solid #d9d9d9; height:300px;}

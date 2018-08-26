@@ -1,0 +1,33 @@
+/**图片上传**/
+.upload{ overflow: hidden;}
+.upload li{ width: 100%; margin-top: 20px; position: relative; margin: 20px 0;}
+.upload li h2{ line-height: 35px;}
+.upload .default{ border: #dbdbdb 1px solid; border-radius: 5px; position: relative; width: 90%;}
+.moren_imgs{ position: absolute; top: 35px; left: 0; width: 90%;border: #dbdbdb 1px solid; border-radius: 5px;}
+.moren_imgs a{ display: table-cell; display: block; width: 100%; height: 100%;}
+.moren_imgs img{width: 100%; max-height: 100%; margin: 0 auto; height: auto; display: inline-block !important; vertical-align: middle;}
+.default span{ font-size: 100px; display: block; width: 100%; height: 100%; text-align: center; color: #d6d6d6;}
+.beforePic{ width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.beforePic input { width: 100%; height: 100%; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; position: absolute; left: 0; top: 0; border: 0;}
+.moren_imgs .layui-icon{ color: #f00; font-size: 40px; position: absolute; top: -10px; right: -10px;}
+.imgzoom_pack{ z-index: 99999999;}
+/**附件上传**/
+.attachmentAdd{padding:0  14px;border-top:10px solid #EEEDED;margin-bottom: 50px;}
+.attachmentAdd>.attachmen_title{overflow: hidden;height: 60px;}
+.attachmen_title>label{display: block;float: left;color:#999999;line-height: 60px;}
+.attachmen_title>a{margin-top: 15px; height: 28px;line-height: 28px;border:1px solid #1E9FFF;background-color:#1E9FFF; color: #fff; text-decoration: none; display: block;padding: 0 10px;float: right;}
+.attachmentAdd ul{margin: 0;padding: 0;}
+.attachmentAdd ul>li{margin: 6px 0;box-shadow: none;}
+.attachmentAdd li{height: 84px;margin: 6px 0;}
+.attachmentAdd li>p{text-align: center; overflow: hidden;float: right;padding: 0;margin: 0;height: 28px;width: 24px;margin: 28px 14px 28px 28px;}
+.attachmentAdd li>p>a{color: #FBC062; font-size: 26px; text-decoration: none;display: inline-block;text-align: center;}
+.attachmentAdd li>dl{background: #fff; height: 82px;float: left; background: #fff; border: 2px solid #EEEDED; border-radius: 2px; margin-top: 0px;width: calc(100% - 70px);}
+.attachmentAdd li>dl>dt{ float: left; width: 82px; float: left; border-right: #EEEDED 1px solid; height: 100%; position: relative;}
+.attachmentAdd li>dl>dd{ width: calc(100% - 83px); float: left; height: 100%;}
+.attachmentAdd li>dl>dd textarea{ border: none; resize: none;box-sizing: border-box;width: 100%;height: 82px;padding:0 5px;}
+.attachmentAdd li>dl>dd textarea::-webkit-input-placeholder{line-height:82px;   /* 使用webkit内核的浏览器 */}
+.attachmentAdd li>dl>dd textarea:-moz-placeholder{line-height: 82px;/* Firefox版本4-18 */}
+.attachmentAdd li>dl>dd textarea::-moz-placeholder{line-height: 82px;/* Firefox版本19+ */}
+.attachmentAdd li>dl>dd textarea:-ms-input-placeholder{line-height: 82px;}
+.attachmentAdd .moren_imged .upload_files_img{ width: 82px; height: 82px !important; vertical-align: middle; display: table-cell; text-align: center;}
+.attachmentAdd .moren_imged .upload_files_img img{ max-width: 100%; max-height: 100%; margin: 0 auto; width: auto; height: auto; display: inline-block !important;}

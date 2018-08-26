@@ -1,0 +1,94 @@
+body{font-family: "微软雅黑";background-color: #F5F5F5;font-size:20px;-webkit-user-select: none;}
+/*去掉谷歌的样式*/
+input, button, select, textarea {
+    outline: none;
+    border: none !important;
+}
+.m{display: none;}
+.bar_nav{position: fixed; z-index: 10; right: 0; left: 0;top: 0; height: 44px; padding-right: 10px; padding-left: 10px; border-bottom: 0; background-color: #fff;}
+.title{right: 40px; left: 40px; display: inline-block; overflow: hidden; width: auto; margin: 0;text-overflow: ellipsis;font-size: 16px; font-weight: 500; line-height: 44px; position: absolute; padding: 0; text-align: center; white-space: nowrap; color: #333;}
+.action_back{position: relative; z-index: 20; display:block; height: 18px; background: url(../../h5/img/arror.png) no-repeat left center; float: left;background-size: 100%; margin-top: 15px; font-size: 16px; color: #333;width: 8px;}
+.step{ position: relative; z-index: 20; display:block;line-height: 22px; float: right; padding: 5px 10px; margin-top: 6px; font-size:16px; color: #333; background: #fff; border-radius: 5px;}
+/*单选按钮*/
+input[type='radio'].radio {opacity:0; display:inline-block; height:18px;margin: 0px;}
+label.radio {background-size: 16px 16px !important; background:url(../../img/r-unchecked.png) no-repeat; height:18px; padding-left:20px;font-weight: normal;}
+input[type='radio'].radio:checked + .radio {background-size: 16px 16px; background:url(../../img/r-checked.png) no-repeat;font-weight: normal;}
+/*复选框*/
+input[type='checkbox'].checkbox {opacity:0; display:inline-block; height:18px;margin: 0px;}
+label.checkbox {background-size: 16px 16px !important; background:url(../../img/c-unchecked.png) no-repeat; height:18px; padding-left:20px;font-weight: normal;}
+input[type='checkbox'].checkbox:checked + .checkbox {background-size: 16px 16px; background:url(../../img/c-checked.png) no-repeat;font-weight: normal;}
+/*.pad_top62{padding-top: 62px;}*/
+.pad_top62 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:40px;
+    bottom: 0;
+    overflow-y: scroll;
+    /* 该属性可以使移动端滑动更加自然 */
+    -webkit-overflow-scrolling: touch;
+}
+.h_total{counter-reset: chapter;padding:0 10px; background-color: white;font-size:1.4rem;height:auto;} 
+.h_total>h3{height: 40px;line-height: 40px;text-align: center;color: #3D4245;font-size: 1.6rem;font-weight: 600;border-top: 10px solid #F5F5F5;margin: 0px -10px;}
+.form_group{counter-increment: chapter;font-size: 1.4rem;position: relative;}
+/*input一列*/
+.cell01_choose{width: 100%;padding: 0;margin: 0;overflow: hidden;}
+.cell01_choose li{width: 100%;border-bottom: 1px solid #EEEEEE;margin: 5px 0px 10px;clear: both;}
+/*一列*/
+.cell1_choose{width: 100%;padding: 0;margin: 0;overflow: hidden;}
+.cell1_choose li label.radio{width:calc(100% - 22px);text-align: left;text-align: justify;}
+/*三列带计数器*/
+.cell3_choose{width: 100%;padding: 0;margin: 0;overflow: hidden;margin: 0px;padding: 0px;}
+.cell3_choose li{width: 33.3333%;text-align: center;counter-increment: num;float: left;min-height: 40px;}
+.cell3_choose li:first-child{text-align: left;}
+.cell3_choose li:nth-child(3n){text-align: right;}
+.cell3_choose li:nth-child(3n+1){text-align: left;}
+/*文本框输入设置*/
+.cell_input_ul{display: block;margin: 0 -10px;}
+.cell_input_ul>li{border-bottom: 1px solid #EEEEEE;padding:0px 10px;display: block;overflow: hidden;line-height: 40px;}
+.male_lablename{width:11rem;float: left;}
+.male_inputw{width:calc(100% - 11rem);float: left;height: 40px;}
+.form_input{width: 100%;padding: 0px;font-size: 1.4rem;}
+.male_inputw input[type="date"],input[type="datetime-local"]{width: 100%;-webkit-appearance:none;outline:none;padding: 10px 0px;font-size: 1.4rem;background-color: transparent;}
+.male_inptradio{width: calc(100% - 35%);float: left;}
+/*单选在同一列展示*/
+.choose_habit{width:calc(100% - 11rem);padding-top: 5px;padding-left: 5px;line-height:normal;float: left;}
+.mar_b{margin-bottom: 0px !important;}
+/*家族病史*/
+.family_cell_ul{display: block;margin: 0px -10px;}
+.family_cell_ul>li{border-bottom: 1px solid #EEEEEE;display: block;overflow: hidden;padding: 0px 10px;}
+.family_cell_ul>li .cell1_cb{margin-top: 10px;}
+.family_cell_ul>li .cell_lable_op{border: 1px solid #EEEEEE;margin: 10px 0px;padding: 5px 10px;}
+.family_cell_ul>li .cell1_select{margin-bottom: 10px;}
+.lable_name{width:35%;display: block;float: left;font-size: 1.4rem;}
+.select_opction{font-size: 1.4rem;width: calc(100% - 35%); border:none;direction:rtl;padding-right: 20px;-webkit-appearance: none;background: url(../../img/listback.png) no-repeat right transparent;margin: 0;}
+/*会员同住*/
+.w_40_point{width: 40%;}
+.w_60_point{width: 60%;}
+/*时间下拉*/
+.cell1_date{width: 100%;overflow: hidden;}
+.cell1_date>label{width: 70%;float: left;}
+.cell1_date>select{padding:10px 20px 10px 0;width: 30%;font-size: 1.4rem;border:none;direction:rtl;-webkit-appearance: none;background: url(../../img/listback.png) no-repeat right transparent;}
+/*按钮*/
+.btn_delete {
+    background: url(../../img/btn_del.png) no-repeat center;
+    width: 60%;
+    margin: 5px;
+    display: inline-block;
+    height: 35px;
+    font-size: 14px;
+    color: white;
+    line-height: 35px;
+}
+/*错误提示*/
+font{color:red;}
+/*添加*/
+.family_add{position: absolute;top: 20px; right:20px; width:1.6rem;height:1.6rem;}
+.family_add img{max-width: 100%;}
+#family_info{position: relative;}
+#family_info .cell_input_ul>li:last-child{border-bottom: 5px solid #EEEEEE;text-align: center;padding: 20px;}
+.male_inputw textarea{line-height: 21px; padding: 10px 15px;}
+.textarea_datail{line-height:20px;padding: 10px 0px;text-align:justify;}
+.family_ui{border-bottom: 4px solid #F5F5F5;}
+.family_lablename{width:15rem;float: left;}
+.family_inputw{width:calc(100% - 15rem);float: left;}

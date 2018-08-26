@@ -1,0 +1,30 @@
+/* Load style*/
+.load{
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: #a6a6a6;
+}
+.load p{
+    padding: 10px 0;
+}
+.load_b{
+    overflow: hidden;
+}
+.load_b_box{
+    display: block;
+}
+.load_b span{
+    float: left;
+}
+.load_img{
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+.load_img img{
+    width: 100%;
+    height: auto;
+}

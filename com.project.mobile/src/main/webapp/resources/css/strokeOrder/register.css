@@ -1,0 +1,302 @@
+@charset "utf-8";
+/*CSS reset  css 初始化*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body {color:#616161; font-family:Verdana, Microsoft YaHei, Simsun; background:#fff; line-height:22px;
+	font-size: 100%;}
+fieldset, img { border:0; }  /*在ie6下面，只要给插入图片加了链接，就会出现小边框*/
+img{display:block;}
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { outline:none; }
+input[type=text], textarea {-webkit-appearance: none; }
+textarea { resize:none; }
+a { color: #616161; text-decoration:none; }
+a:hover { text-decoration:underline; }
+.clearfix:before,.clearfix:after{
+	display:table;
+	content:"";}
+.clearfix:after{
+	clear:both;}
+.clearfix{zoom:1;}
+
+.md-form{
+	width: 100%;
+	margin:0 auto;
+	padding-bottom: 30px;
+}
+.md-form h2{
+	text-align: center;
+	height:50px;
+	line-height:50px;
+	background:#00AFF0;
+	margin-bottom:15px;
+	font-size:1.5em;
+	font-weight:normal;
+	color:#fff;
+}
+.md-form li{
+	margin-bottom: 20px;
+	padding-right:10px;
+	border-bottom: 1px solid #ddd;
+}
+.md-form select{
+	width: 21%;
+	height: 35px;
+	border:0 none;
+}
+
+.md-form label{
+	width: 37%;
+	text-align: left;
+	display: inline-block;
+	color:#333;
+	font-size:1em;
+	padding-left:5px;
+}
+.md-form input{
+	width: 54%;
+	height: 35px;
+	padding-left:5px; 
+	border:0 none;
+}
+.verification{
+	height: 40px !important;
+	background: #3fc3b6;
+	border: 0 none;
+	cursor: pointer;
+	padding:0 5px;
+	color:#fff;
+}
+.remarks{
+	display: inline;
+	line-height: 60px;
+	width: 12%;
+}
+.remarks span,i{
+	display: table-cell;vertical-align: top;
+}
+textarea{
+	width: 67%;
+	height: 60px;
+	resize: none;
+	border:1px solid #eee;
+}
+p{
+	text-align: center;
+}
+.verification-yn{
+	position: absolute;
+	left: 41%;
+	bottom: -18px;
+}
+.location{
+	position: relative;
+	
+}
+input[type="button"]{
+	cursor: pointer;
+}
+input[type="radio"]{
+	width:16px;
+	height:16px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+input[type="checkbox"]{
+	width:16px;
+	height:16px;
+	display:table-cell;
+	vertical-align:middle;
+}
+.md-form li:last-child{
+	border-bottom:none;
+}
+.md-form ul li.last input{
+	width:96%;
+	background:#00aff0;
+	border:0;
+	font-size:1.2em;
+	color:#fff;
+	height:40px;
+	/*line-height:40px;*/
+	border-radius:5px;
+	margin:0 auto;
+	display:block;
+	/*border: 1px solid red;*/
+}
+.clause{
+	color:#00aff0;
+}
+.uploadpicture{
+	width:100%;
+	height:auto;
+}
+.uploadpicture .uploadpicture-wrap{
+	width:35%;
+	margin: 0 auto 15px;
+}
+.uploadpicture .uploadpicture-wrap .uploadpicture-wrap-top img{
+	width:100%;
+	height:auto;
+}
+.uploadpicture .uploadpicture-wp{
+	overflow:hidden;
+	width:95%;
+	margin:0 auto 15px; 
+}
+.uploadpicture .uploadpicture-wp .left{
+	width:50%;
+	float:left;
+}
+.uploadpicture .uploadpicture-wp .left img{
+	width:100%;
+	height:auto;
+}
+.uploadpicture .uploadpicture-wp .right{
+	width:50%;
+	float:right;
+}
+.uploadpicture .uploadpicture-wp .right img{
+	width:100%;
+	height:auto;
+}
+.uploadpictures{border-top:20px solid #f0f0f0;}
+.md-form-padding{padding-top:15px;}
+.md-form ul li .one{width:16%;}
+
+.uploadpicture .uploadpicture-wp .left p{
+	width: 100%;
+}
+
+.uploadpicture .uploadpicture-wp .right p {
+	width: 100%;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+header a{color: #fff;}
+header{background:#00aff0;width:100%;height:60px;line-height:60px;overflow:hidden;padding:0;display:table;position: fixed; top: 0;z-index: 9999;}
+header .l,header .c,header .r{float:left;display:table-cell;vertical-align: middle;}
+header .l{width:7%;}
+header .l span{float:right;display:block;width:12px;height:26px;background:url('/resources/h5/img/arror.png') no-repeat;margin-top:21px; background-size:100%;cursor:pointer;}
+header .c{font-size:1.05em;color:#fff;cursor:pointer;width:13%;}
+header .r{width:60%;padding-right:20%;font-size:1.2em;color:#fff;text-align: center;}
+
+/* 意见反馈 */
+.feedback_l{width:7%;float:left;display:table-cell;vertical-align: middle;}
+.feedback_l span{float:right;display:block;width:12px;height:28px;background:url('/resources/h5/img/arror.png') no-repeat;margin-top:21px; background-size:100%;cursor:pointer;}
+.feedback_c{width:13%;font-size:1.05em;color:#fff;cursor:pointer;float:left;display:table-cell;vertical-align: middle;}
+.feedback_r{width:60%;font-size:1.2em;color:#fff;text-align: center;float:left;display:table-cell;vertical-align: middle;}
+.feedback_rr{width:16%;font-size:1em;color:#fff;text-align: right;float:left;display:table-cell;vertical-align: middle;margin-right: 4%;}
+.feedback_rr{width:16%;font-size:1em;color:#fff;text-align: right;float:left;display:table-cell;vertical-align: middle;margin-right: 4%;}
+.feedback_rr img{margin-top:18px;width:22px;height:22px;float: right;}
+.feedback_rr a{color:#fff;}
+.feedback_content {width:100%;}
+.feedback_content textarea{margin-top:20px;height:300px;background:#fff;border:0;padding:2%;width:96%;font-size:1em;}
+
+.feedback_l span {
+	float: right;
+	display: block;
+	width: 12px;
+	height: 26px;
+	background: url('/resources/img/arror.png') no-repeat;
+	margin-top: 21px;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.feedback_c {
+	width: 13%;
+	font-size: 1em;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.feedback_r {
+	width: 60%;
+	font-size: 1.2em;
+	color: #fff;
+	text-align: center;
+	float: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.feedback_rr {
+	width: 16%;
+	font-size: 1em;
+	color: #fff;
+	text-align: right;
+	float: left;
+	display: table-cell;
+	vertical-align: middle;
+	margin-right: 4%;
+}
+
+.feedback_rr img {
+	margin-top: 16px;
+	width: 22px;
+	height: 22px;
+	float: right;
+}
+
+.feedback_rr a {
+	color: #fff;
+}
+
+.feedback_content {
+	width: 100%;
+}
+
+.feedback_content textarea {
+	margin-top: 20px;
+	height: 300px;
+	background: #fff;
+	border: 0;
+	padding: 2%;
+	width: 96%;
+	font-size: 1em;
+}
+
+
+@media (min-width: 320px) and (max-width: 639px) {
+	.md-form label{font-size: 0.8em;}
+}
+@media (min-width: 640px) and (max-width: 1080px) {
+	.md-form label{font-size: 1.1em;}
+}
+
+/*新增的单选复选按钮样式*/
+.md-form ul li span{
+	color: red;
+}
+ input[type='checkbox'],input[type='radio']{
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  width:18px !important;
+  height: 18px !important;
+  border-radius: 50% !important;
+  background-image:url('/resources/img/check-no.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #DDDDDD;
+  vertical-align: top;
+  outline: none;
+  display: inline-block;
+}
+input[type='checkbox']:checked,input[type='radio']:checked {
+    background-image:url('/resources/img/checked.png');
+    border: none;
+    outline: none;
+}

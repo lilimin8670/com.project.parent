@@ -1,0 +1,25 @@
+.side-head{ background: #3474cd; height: 60px; line-height: 60px; border-bottom: 1px #fff solid;}
+.side-head h2{  text-align: center; width: calc(100% - 43px); color: #FFF;  font-size: 1.4em;}
+.side-head a{ float: left; font-size: 1em; color: #fff; padding-left: 15px; margin-left: 5px; text-decoration: none; background: url(../img/arror.png) no-repeat left center; height: 16px; line-height: 16px; margin-top: 22px; background-size: auto;}
+.menu ul,.menu2 ul{ width: 100%; height: 100%;}
+.menu ul li,.menu2 ul li{ width: 90%; height: 60px; line-height: 60px; padding-left: 10%; background: #3474cd; border-bottom: 1px #c9e9ff solid; border-top:1px #4e6e9f solid;}
+.menu ul li.hover,.menu2 ul li.hover{background: #e8e8e8; border-top: 1px solid #e8e8e8;}
+.menu ul li.hover a,.menu2 ul li.hover a{ color: #2a2a2a;}
+.menu ul li a,.menu2 ul li a{color: #FFF; text-decoration: none; display: block; height: 100%;}
+.menu ul li i,.menu2 ul li i{ float: left; margin-right: 10px; width: 31px; height: 38px; padding-top: 11px;}
+.menu ul li img,.menu2 ul li img{ width: 90%; height: auto;}
+.basicdata h2{ height: 48px; line-height: 48px; padding-left: 30px; background: #e8e8e8; color: #8d8d8d; border-bottom: #ddd 1px solid; font-size: 1.2em;}
+.m-list li{padding: 10px; line-height: 35px; border-bottom: 1px solid #DDD; overflow: hidden;}
+.m-list input[type="text"]{float: right; width: 70%; height: 35px; border: none; background: #fff; font-family:"microsoft yahei";}
+.m-list span{ float: left;}
+.m-list p{float: left; line-height: 24px; border: none; padding-top: 6px;}
+.m-list p.photos{ width: 70%;}
+.m-list p img{ width: 50%; height: auto; margin-left: 10px;} 
+.detection-list li{padding: 10px; line-height: 35px; border-bottom: 1px solid #DDD; overflow: hidden;}
+.detection-list li span{ float: left; width: 25%;}
+.detection-list li .list_right{ float: left; width: 75%;}
+.detection-list li .list_right p{ line-height: 24px; padding-top: 6px;}
+.list_img{ width: 30%; float: left; height: 80px; line-height: 80px; margin: 0 calc(10% / 6 - 1px); border: 1px solid #DDDDDD; text-align: center;}
+.list_img img{ max-height:calc(100% - 2px); max-width: 100%; vertical-align: middle;}
+.enlarge{ background: #000; position: fixed; top: 0; left: 0; z-index: 99; width: 100%; text-align: center;}
+.enlarge img{ vertical-align: middle; max-width: 100%;}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+	<title>关于我们</title>
+	<link rel="stylesheet" href="css/aboutUs.css">
+</head>
+<body>
+<!--	<header>
+		<div class="l">
+			<span></span>
+		</div>
+		<div class="c">返回</div>
+		<div class="r">关于我们</div>
+	</header>-->
+	<!--<nav>
+		<span><img src="img/logo.png" alt="" class="nav_logo"></span>
+		<p>一 国际旅游医疗健康管理·美丽定制集团 一</p>
+	</nav>
+	<section>
+		<span><img src="img/aboutUsNew.png.png" class="set_cont"></span>
+	</section>-->
+	<div class="aboutUsN">
+		<img src="img/aboutUsNew.png" id="imgId">
+	</div>
+	<div class="edition">
+		<p id="versionName"></p>
+	</div>
+	<footer>
+		<strong>Copyright &copy; 2016-2017 泽晟堂（北京）医学研究院 </strong>
+        <p>All Rights Reserved.</p>
+        <p> 京ICP备16005704号 </p>
+      <!--  <p>泽晟堂（北京）医学研究院  版权所有</p>-->
+	</footer>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/page/about.js"></script>
+    <script>
+		$(function(){
+			$("#versionName").text(getQueryString("versionName"));
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>详情</title>
+    <link rel="stylesheet" href="css/editorView.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/evaluate.css">
+</head>
+<body>
+<!--<header>
+    <div class="l">
+        <span id="back"></span>
+    </div>
+    <div class="c">返回</div>
+    <div class="r">详情</div>
+</header>-->
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<script src="/resources/js/common/hacker.css.js"></script>-->
+<script src="js/common.js"></script>
+<script src="js/template.js"></script>
+<script src="js/template-helper.js"></script>
+<script src="js/page.js"></script>
+<script src="js/page/study-detail.js"></script>
+<script type="text/javascript" src="/resources/layer/layer.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#cominput").focus(function(){
+            $(".comfs a:eq(0)").hide();
+            $(".comfs a:eq(1)").show();
+            $("#cominput").addClass('focus');
+        })
+        $(".packageDiv").css("min-height",window.height());
+        $(".packageDiv").click(function(){
+            $(".comfs a:eq(1)").hide();
+            $(".comfs a:eq(0)").show();
+            $("#cominput").removeClass('focus');
+        });
+    });
+</script>
+<div class="packageDiv">
+    <div class="new_details" id="studyDetail">
+        <!--新闻详情展示区-->
+    </div>
+    <script type="text/html"  id="studyDetailTemplate">
+        <div class="new_details_title">{{title}}</div>
+        <div class="new_details_time">{{dateTime | dateFormat:'yyyy-MM-dd HH:mm:ss'}} &nbsp;&nbsp;<span>{{categoryName}}</span></div>
+        {{if videoUrl}}
+        <div>
+            <video style="width: 100%; height: auto;" controls>
+                <source src="{{videoUrl}}"  type="video/mp4">
+            </video>
+        </div>
+        {{/if}}
+        <div class="new_details_content">
+            {{#content}}
+        </div>
+    </script>
+    <!--学习天地评论-->
+    <div id="learnworldEvaluate" class="pingl">
+
+    </div>
+    <div id="moreEvaluations" onclick="init()" style="display: none;text-align: center;color: #129bf0;">更多评论...</div>
+    <div class="load" style="padding-bottom: 40px;">
+        <div>
+            <p class="load_a" id="loadMore">加载更多...</p>
+            <p class="load_b" id="loading" style="display:none">
+    		<span class="load_b_box">
+    			<span class="load_img">
+    				<img src="img/load.gif"/>
+    			</span>
+    			<span>&nbsp;加载中，请稍后...</span>
+    		</span>
+            </p>
+            <p class="load_c" id="loadNoMore" style="display:none">没有更多了...</p>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="evaluateTemplate">
+    <ul>
+        {{each learnworldEvaluateList}}
+        <li>
+            <dl>
+                <dt>
+                    {{if null!=$value.userIcon && $value.userIcon!=""}}
+                    <img src="{{$value.userIcon}}"/>
+                    {{else}}
+                    <img src="/resources/h5/img/tou1.png"/>
+                    {{/if}}
+                </dt>
+                <dd><span>{{$value.userName}}</span><span>{{$value.createDate}}</span></dd>
+            </dl>
+            <p>{{$value.evaluateContent}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<!--
+	<style>
+		.comment{border: 1px solid red;display: table;}
+		.comment li{display: inline-table;}
+	</style>
+	<ul class="comment">
+		<li>
+			<input type="text" name="cominput" id="cominput"placeholder="请输入评论(300字以内)" value=""  style="width: 100%"/>
+		</li>
+		<li class="comfs">
+			<a href="#learnworldEvaluate"><label id="evaluateCount"></label></a>
+			<a href="#" onclick="saveEvaluation()" id="sendBtn">发送</a>
+		</li>
+	</ul>
+	&lt;!&ndash;<script type="text/javascript">&ndash;&gt;
+		&lt;!&ndash;var newwidth = $(".comfs a:first").width();&ndash;&gt;
+		&lt;!&ndash;alert(newwidth);&ndash;&gt;
+		&lt;!&ndash;alert("calc(100% - "+newwidth+")");&ndash;&gt;
+		&lt;!&ndash;$("#cominput").css("width","calc(100% - "+newwidth+")");&ndash;&gt;
+	</script>-->
+
+<div class="comment">
+    <input type="text" name="cominput" id="cominput"placeholder="请输入评论(300字以内)" value="" maxlength='300'/>
+    <div class="comfs">
+        <a href="#learnworldEvaluate"><label id="evaluateCount"></label></a>
+        <a href="#" onclick="saveEvaluation()" id="sendBtn">发送</a>
+    </div>
+</div>
+</body>
+</html>

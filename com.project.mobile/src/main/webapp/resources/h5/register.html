@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<title>基础信息</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/health_app.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/layer/layer.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/easyui/region.js"></script>
+		<script type="text/javascript" src="js/page/MemberRegister.js"></script>
+		<style type="text/css">
+			.basic_list li label{width: calc(40% - 30px); padding: 0 10px;}
+		</style>
+	</head>
+	<body>
+		<div class="informing_box">
+			<form id="paramForm">
+				<input id="fromMemId" name="fromMemId" type="hidden">
+				<input id="tradeId" name="tradeId" type="hidden">
+				<input id="storeId" name="storeId" type="hidden">
+				<h2>一龄会员注册</h2>
+				<ul class="basic_list">
+					<li><label for="loginname"><span>&lowast; </span>帐号：</label>
+						<input id="loginname"   name="loginname" type="text" onblur="validLoginName();" /></li>
+					<li><label for="memName"><span>&lowast; </span>姓名：</label>
+						<input id="memName" type="text" name="memName" /></li>
+					<li><label for="nickname"><span>&lowast; </span>昵称：</label>
+						<input id="nickname" type="text" name="nickname" /></li>
+					<li><label for="password"><span>&lowast; </span>密码：</label>
+						<input id="password" type="password" name="password" onblur="validPassword();"/></li>
+					<li><label for="comfirmPwd"><span>&lowast; </span>确定密码：</label>
+						<input id="comfirmPwd" type="password" onblur="validNewPassword();"/></li>
+					<li><label for="cardType">证件类型：</label>
+						<select id="cardType" name="cardType" onchange="changeCardType()">
+							<option value="1">身份证</option>
+							<option value="2">护照</option>
+							<option value="3">其他</option>
+						</select>
+					<li><label for="idCard"><span>&lowast; </span>证件号码：</label>
+						<input id="idCard" type="text" onchange="validCardNo()" name="idCard"/></li>
+					<li><label for="birthdayDate"><span>&lowast; </span>出生日期：</label>
+						<input name="birthdayDate" id="birthdayDate" type="date"></li>
+					<li><label for="phone"><span>&lowast; </span>联系方式：</label>
+						<input id="phone" type="text" name="phone" /></li>
+					<li>
+						<label for="smsCode"><span>&lowast; </span>短信验证码：</label>
+						<input  class="verification" id="smsCode" type="text" />
+						<a class="verif" href="javascript:void(0);" id="sendInfo" onclick="requireValidCode(this)">获取验证码</a>
+					</li>
+					<li>
+						<label for="sex"><span>&lowast; </span>性别：</label>
+						<select name="sex" id="sex">
+							<option value="女">女</option>
+							<option value="男">男</option>
+						</select>
+					</li>
+					<li>
+						<label for="isMarry">婚否：</label>
+						<select name="isMarry">
+							<option value="1">未婚</option>
+							<option value="2">已婚</option>
+							<option value="3">离异</option>
+							<option value="4">丧偶</option>
+							<option value="5" selected>其他</option>
+						</select>
+					</li>
+					<li>
+						<label for="nationality">国籍：</label>
+						<select id="nationality" name="nationality">
+							<option value="CHN">请选择</option>
+						</select>
+					</li>
+					<li class="native">
+						<label class="place">居住地址：</label>
+						<ul>
+							<li>
+								<label for="province"><span>&lowast; </span>省份：</label>
+								<select name="province" id="province" onchange="_data.initMemberCity(this.value)">
+									<option value="">请选择</option>
+								</select>
+							</li>
+							<li>
+								<label for="city"><span>&lowast; </span>地市：</label>
+								<select name="city" id="city" onchange="_data.initMemberArea(this.value)">
+									<option value="">请选择</option>
+								</select>
+							</li>
+							<li>
+								<label for="area">区县：</label>
+								<select name="area" id="area" >
+									<option value="">请选择</option>
+								</select>
+							</li>
+						</ul>
+					</li>
+					<li class="address">
+						<label for="">详细地址:</label>
+						<textarea name="address"></textarea>
+					</li>
+					<li class="register">
+						<a href="javascript:void(0);" onclick="MemberRegister()" >注册</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<a id="anchor_scroll" href="" style="display:none">点击这里本页跳转</a>
+	</body>
+</html>

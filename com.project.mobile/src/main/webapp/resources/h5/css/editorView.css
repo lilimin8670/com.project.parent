@@ -1,0 +1,19 @@
+#newsDetail{max-width: 100%;height: auto;}
+#newsDetail .new_details_title{padding: 0px 10px;}
+.new_details_time{padding: 0px 10px;}
+#newsDetail > .new_details_content>p>iframe{
+    width: 100% !important;
+    height:auto !important;
+    max-width: 100% !important;
+}
+
+
+#studyDetail{max-width: 100%;height: auto;}
+#studyDetail .new_details_title{padding: 0px 10px;}
+.new_details_time{padding: 0px 10px;}
+.new_details_content>p{padding: 0 15px;}
+#studyDetail > .new_details_content>p>iframe{
+    width: 100% !important;
+    height:auto !important;
+    max-width: 100% !important;
+}

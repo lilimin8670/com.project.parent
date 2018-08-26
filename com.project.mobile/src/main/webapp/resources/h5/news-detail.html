@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+	<title>新闻详情</title>
+	<link rel="stylesheet" href="css/aboutUs.css">
+	<link rel="stylesheet" href="css/editorView.css">
+</head>
+<body>
+	<!--<header>
+		<div class="l">
+			<span id="back"></span>
+		</div>
+		<div class="c">返回</div>
+		<div class="r">新闻详情</div>
+	</header>-->
+	<div class="new_details" id="newsDetail">
+		<!--新闻详情展示区-->
+	</div>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/resources/js/common/hacker.css.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/template-helper.js"></script>
+	<script src="js/page.js"></script>
+	<script src="js/page/news-detail-share.js"></script>
+	<script type="text/html"  id="newsDetailTemplate">
+		<div class="new_details_title">{{title}}</div>
+		<div class="new_details_time">{{createDate}} &nbsp;&nbsp;<span>{{categoryName}}</span></div>
+		{{if videoUrl}}
+		<div>
+			<video style="width: 100%; height: auto;" controls>
+				<source src="{{videoUrl}}"  type="video/mp4">
+			</video>
+		</div>
+		{{/if}}
+		<div class="new_details_content">
+			{{#content}}
+		</div>
+	</script>
+</body>
+</html>
