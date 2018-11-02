@@ -31,6 +31,9 @@
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
+    <listener>
+        <listener-class>com.project.listener.WebAppApplicationConfigureFilter</listener-class>
+    </listener>
     <welcome-file-list>
         <welcome-file>login.html</welcome-file>
     </welcome-file-list>
