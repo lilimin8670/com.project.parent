@@ -59,5 +59,4 @@
     </mvc:view-resolvers>
 
     <mvc:resources mapping="/resources/**" location="/resources/"/>
-    <mvc:resources mapping="/h5/**" location="/resources/h5/"/>
 </beans>
