@@ -1,45 +1,73 @@
 <%@ page language="java" pageEncoding="utf-8"%>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>信息管理后台 - 登录</title>
-    <link rel="stylesheet" href="../../../resources/layui/css/layui.css">
-    <link rel="stylesheet" href="../../../resources/css/public.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>信息管理后台 - 登录</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="/resources/login/css/supersized.css">
+<link rel="stylesheet" href="/resources/login/css/login.css">
+<link href="/resources/login/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="/resources/login/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/resources/login/js/jquery.form.js"></script>
+<script type="text/javascript" src="/resources/login/js/tooltips.js"></script>
+<script type="text/javascript" src="/resources/login/js/login.js"></script>
 </head>
-<style>
-   body{
-        background: #00F7DE;
-        background-image: url("../../../resources/images/background.jpg");
-        height:100%;
-        width:100%;
-        overflow: hidden;
-        background-size:cover;
-    }
-</style>
-<body class="layui-layout-body">
-<div class="login_main">
-    <div class="lg_topimg"><img src="../../../resources/images/ht_dl_03.png" width="382" height="200" /></div>
-    <div class="login_box">
-        <%--<div class="login_title"><img src="./resources/images/tangshanlogo.png" width="327" height="60" /></div>--%>
-        <ul>
-            <li class="login_input"><span><img src="../../../resources/images/ht_dl_10.png" width="22" height="22" /></span>
-                <input name="" id="userName" type="text" placeholder="用户名" /></li>
-            <li class="login_input margin_top15"><span><img src="../../../resources/images/ht_dl_13.png" width="22" height="22" /></span>
-                <input name="" type="password" id="password" placeholder="密码" /></li>
-            <li class="login_jzmm"><input type="checkbox" value="y" id="rember" name="rember"/>记住密码</li>
-            <!-- <li class="margin_top15 login_jzmm"><input name="" type="checkbox" value="" />记住密码</li> -->
-            <li class="margin_top15 login_button"><input name="loginBtn" id="loginBtn" type="button"  value="登 录"/></li>
-        </ul>
-    </div>
+
+<body>
+
+<div class="page-container">
+	<div class="main_box">
+		<div class="login_box">
+			<div class="login_logo">
+				<img src="../../../resources/login/images/logo.png" >
+			</div>
+		
+			<div class="login_form">
+				<form action="index.html" id="login_form" method="post">
+					<div class="form-group">
+						<label for="j_username" class="t">邮　箱：</label> 
+						<input id="email" value="" name="email" type="text" class="form-control x319 in" 
+						autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label for="j_password" class="t">密　码：</label> 
+						<input id="password" value="" name="password" type="password" 
+						class="password form-control x319 in">
+					</div>
+					<div class="form-group">
+						<label for="j_captcha" class="t">验证码：</label>
+						 <input id="j_captcha" name="j_captcha" type="text" class="form-control x164 in">
+						<img id="captcha_img" alt="点击更换" title="点击更换" src="../../../resources/login/images/captcha.jpeg" class="m">
+					</div>
+					<div class="form-group">
+						<label class="t"></label>
+						<label for="j_remember" class="m">
+						<input id="j_remember" type="checkbox" value="true">&nbsp;记住登陆账号!</label>
+					</div>
+					<div class="form-group space">
+						<label class="t"></label>　　　
+						<button type="button"  id="submit_btn" 
+						class="btn btn-primary btn-lg">&nbsp;登&nbsp;录&nbsp </button>
+						<input type="reset" value="&nbsp;重&nbsp;置&nbsp;" class="btn btn-default btn-lg">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="bottom">Copyright &copy; 2014 - 2015 <a href="#">系统登陆</a></div>
+	</div>
 </div>
-<script src="../../../resources/layui/layui.js"></script>
-<script>
-    //JavaScript代码区域
-    layui.use(['form','element'], function(){
-        var element = layui.element,
-        form = layui.form;
-    });
-</script>
+
+<!-- Javascript -->
+
+<script src="/resources/login/js/supersized.3.2.7.min.js"></script>
+<script src="/resources/login/js/supersized-init.js"></script>
+<script src="/resources/login/js/scripts.js"></script>
+
 </body>
 </html>
