@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="GBK"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -33,7 +33,7 @@
     </bean>
     <bean id="mappingJackson2HttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-        <!--æ˜¯å¦æ ¼å¼åŒ–è¾“å‡º-->
+        <!--ÊÇ·ñ¸ñÊ½»¯Êä³ö-->
         <property name="prettyPrint" value="true"/>
         <property name="supportedMediaTypes">
             <list>
@@ -53,7 +53,7 @@
         </property>
     </bean>
 
-    <!-- è®¾ç½®è§†å›¾è§£æžå™¨-->
+    <!-- ÉèÖÃÊÓÍ¼½âÎöÆ÷-->
     <mvc:view-resolvers>
         <mvc:jsp prefix="/WEB-INF/views/" suffix=".jsp"/>
     </mvc:view-resolvers>

@@ -6,17 +6,17 @@
 	<title>信息管理后台 - 登录</title>
 
 <!-- CSS -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/login/css/supersized.css">
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/login/css/login.css">
-<link href="<%=request.getContextPath()%>/resources/login/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="${webAppPath}/resources/login/css/supersized.css">
+<link rel="stylesheet" href="${webAppPath}/resources/login/css/login.css">
+<link href="${webAppPath}/resources/login/css/bootstrap.min.css" rel="stylesheet">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="<%=request.getContextPath()%>/resources/login/js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/login/js/jquery.form.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/login/js/tooltips.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/login/js/login.js"></script>
+<script src="${webAppPath}/resources/login/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="${webAppPath}/resources/login/js/jquery.form.js"></script>
+<script type="text/javascript" src="${webAppPath}/resources/login/js/tooltips.js"></script>
+<script type="text/javascript" src="${webAppPath}/resources/login/js/login.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 	<div class="main_box">
 		<div class="login_box">
 			<div class="login_logo">
-				<img src="<%=request.getContextPath()%>/resources/login/images/logo.png" >
+				<img src="${webAppPath}/resources/login/images/logo.png" >
 			</div>
 		
 			<div class="login_form">
@@ -43,7 +43,7 @@
 					<div class="form-group">
 						<label for="j_captcha" class="t">验证码：</label>
 						 <input id="j_captcha" name="j_captcha" type="text" class="form-control x164 in">
-						<img id="captcha_img" alt="点击更换" title="点击更换" src="<%=request.getContextPath()%>/resources/login/images/captcha.jpeg" class="m">
+						<img id="captcha_img" alt="点击更换" title="点击更换" src="${webAppPath}/resources/login/images/captcha.jpeg" class="m">
 					</div>
 					<div class="form-group">
 						<label class="t"></label>
@@ -65,9 +65,9 @@
 
 <!-- Javascript -->
 
-<script src="<%=request.getContextPath()%>/resources/login/js/supersized.3.2.7.min.js"></script>
-<script src="<%=request.getContextPath()%>/resources/login/js/supersized-init.js"></script>
-<script src="<%=request.getContextPath()%>/resources/login/js/scripts.js"></script>
+<script src="${webAppPath}/resources/login/js/supersized.3.2.7.min.js"></script>
+<script src="${webAppPath}/resources/login/js/supersized-init.js"></script>
+<script src="${webAppPath}/resources/login/js/scripts.js"></script>
 
 </body>
 </html>
