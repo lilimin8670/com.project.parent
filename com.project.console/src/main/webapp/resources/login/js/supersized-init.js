@@ -1,6 +1,5 @@
 jQuery(function($){
     var path = window.document.location.href;
-    alert(path);
     $.supersized({
 
         // Functionality

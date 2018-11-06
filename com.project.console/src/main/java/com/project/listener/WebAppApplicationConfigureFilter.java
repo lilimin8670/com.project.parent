@@ -9,11 +9,13 @@ import javax.servlet.ServletContextListener;
  */
 public class WebAppApplicationConfigureFilter implements ServletContextListener{
     public void contextInitialized(ServletContextEvent servletContextEvent) {
+        ServletContext servletContext = servletContextEvent.getServletContext();
+        String servletContextName = servletContext.getServletContextName();
+        servletContext.setAttribute("webAppPath", servletContextName);
 
     }
 
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        ServletContext servletContext = servletContextEvent.getServletContext();
-        servletContext.setAttribute("webAppPath",servletContext.getContextPath());
+
     }
 }
