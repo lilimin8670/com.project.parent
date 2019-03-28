@@ -27,11 +27,11 @@
 			<div class="login_logo">
 				<img src="<%=request.getContextPath()%>/resources/login/images/logo.png" >
 			</div>
-		
+
 			<div class="login_form">
 				<form action="index.html" id="login_form" method="post">
 					<div class="form-group">
-						<label for="j_username" class="t">邮　箱：</label> 
+						<label for="j_username" class="t">邮　箱：${webAppPath}</label>
 						<input id="email" value="" name="email" type="text" class="form-control x319 in" 
 						autocomplete="off">
 					</div>

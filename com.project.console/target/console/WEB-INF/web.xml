@@ -27,6 +27,9 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <listener>
+        <listener-class>com.project.listener.WebAppApplicationConfigureFilter</listener-class>
+    </listener>
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>*.html</url-pattern>

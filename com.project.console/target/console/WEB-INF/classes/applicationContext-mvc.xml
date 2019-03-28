@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="GBK"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -33,7 +33,7 @@
     </bean>
     <bean id="mappingJackson2HttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-        <!--是否格式化输出-->
+        <!--�Ƿ��ʽ�����-->
         <property name="prettyPrint" value="true"/>
         <property name="supportedMediaTypes">
             <list>
@@ -53,11 +53,10 @@
         </property>
     </bean>
 
-    <!-- 设置视图解析器-->
+    <!-- ������ͼ������-->
     <mvc:view-resolvers>
         <mvc:jsp prefix="/WEB-INF/views/" suffix=".jsp"/>
     </mvc:view-resolvers>
 
     <mvc:resources mapping="/resources/**" location="/resources/"/>
-    <mvc:resources mapping="/h5/**" location="/resources/h5/"/>
 </beans>
